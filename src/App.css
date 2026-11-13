@@ -1,0 +1,54 @@
+
+#root {
+  min-height: 100vh;
+}
+
+body {
+  background: #f8f3eb !important;
+  color: #49372d;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h1, h2, h3 {
+  color: #513b2d;
+}
+
+.card {
+  border-radius: 18px !important;
+  background: #fffdf9 !important;
+}
+
+.formulario-producto {
+  background: #f3e9dc;
+  border: 1px solid #e7d5bd;
+}
+
+.btn-dark {
+  background: #624635 !important;
+  border-color: #624635 !important;
+}
+
+.btn-dark:hover {
+  background: #463124 !important;
+}
+
+.btn-success {
+  background: #86704b !important;
+  border-color: #86704b !important;
+}
+
+.table thead th {
+  background: #624635 !important;
+  color: white !important;
+  padding: 16px;
+}
+
+.table tbody td {
+  padding: 15px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #b69a6a;
+  box-shadow: 0 0 0 0.2rem #b69a6a33;
+}
