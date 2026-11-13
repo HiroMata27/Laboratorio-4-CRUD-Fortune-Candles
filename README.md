@@ -1,16 +1,101 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Fortune Candles - Laboratorio IV CRUD
+Jonathan Estiben Fonseca Cardenas
+## Descripción del proyecto
 
-Currently, two official plugins are available:
+Fortune Candles es una aplicación web desarrollada con React
+para administrar el inventario de una tienda de velas artesanales.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+El sistema permite consultar, registrar, actualizar y eliminar
+productos mediante operaciones CRUD, utilizando una API REST
+simulada con JSON Server.
 
-## React Compiler
+La interfaz fue diseñada con Bootstrap y estilos CSS
+personalizados en tonos crema, café y dorado.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- JavaScript
+- HTML5
+- CSS3
+- Bootstrap
+- JSON Server
+- GitHub Codespaces
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Funcionalidades
+
+### CREATE - Registrar productos
+Permite agregar productos indicando nombre, categoría,
+precio y cantidad disponible.
+
+### READ - Consultar productos
+Muestra los productos registrados en una tabla con
+su información y disponibilidad.
+
+### UPDATE - Actualizar productos
+Permite modificar los datos de los productos existentes.
+
+### DELETE - Eliminar productos
+Permite eliminar productos mediante una ventana
+de confirmación.
+
+## Estructura del proyecto
+
+- src/Negocio.jsx: componente principal del CRUD.
+- src/App.jsx: componente principal de React.
+- src/main.jsx: punto de entrada de la aplicación.
+- src/helpers/helpFetch.js: peticiones HTTP a la API.
+- src/App.css: estilos personalizados.
+- src/index.css: estilos generales.
+- db.json: almacenamiento de productos.
+- vite.config.js: configuración de Vite y proxy.
+
+## React Hooks
+
+Se utiliza useState para administrar los productos,
+el formulario y los estados de la interfaz.
+
+Se utiliza useEffect para cargar los productos
+cuando se inicia el componente.
+
+## Ejecución del proyecto
+
+1. Instalar las dependencias:
+
+   npm install
+
+2. Iniciar JSON Server:
+
+   npx json-server db.json --port 3000
+
+3. En otra terminal, iniciar React:
+
+   npm run dev
+
+4. Abrir la aplicación en el puerto 5173.
+
+## Pruebas realizadas
+
+Se realizaron pruebas de las cuatro operaciones CRUD:
+
+- Registro de Vela Conejo.
+- Consulta del inventario.
+- Actualización de la categoría de Vela Gato.
+- Eliminación de Vela Conejo.
+
+Las pruebas mostraron el funcionamiento de las
+operaciones CRUD en la interfaz web.
+
+## Repositorio
+
+https://github.com/HiroMata27/Laboratorio-4-CRUD-Fortune-Candles
+
+## Asignatura
+
+Programación Web
+
+Laboratorio IV - CRUD con React
+
+Universidad Libre
